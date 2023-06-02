@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page, chromium } from "playwright";
 
-describe("Learn how to handle dropdown ", () => {
+describe("Learn how to handle dropdown", () => {
   let browser: Browser;
   let context: BrowserContext;
   let page: Page;
@@ -34,7 +34,7 @@ describe("Learn how to handle dropdown ", () => {
     ]);
   });
   test("Count of the select",async()=>{
-    const lang = await page.$$("#Lang option")
+    const lang = await page.$$("#Lang option") // The $$ function is used to select multiple elements from the page using a CSS selector.
     console.log(lang.length)
   })
   test("get selected text",async()=>{
