@@ -1,6 +1,6 @@
 import { Browser, BrowserContext, Page, chromium } from "playwright";
 
-describe("Learn how to handle dropdown", () => {
+describe("Learn how to handle frame", () => {
   let browser: Browser;
   let context: BrowserContext;
   let page: Page;
