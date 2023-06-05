@@ -3,7 +3,7 @@ import Env from "../../utils/environment";
 import HeaderPage from "../../page/Header.page";
 import LoginPage from "../../page/Login.page";
 import CommonFunctions from "../../page/common.page";
-
+import * as data from "../../data/login.cred.json";
 describe("TC001", () => {
   let browser: Browser;
   let context: BrowserContext;
@@ -26,8 +26,8 @@ describe("TC001", () => {
     expect(page.url()).toBe("https://letcode.in/");
     await header.clickLoginLink();
     expect(page.url()).toBe("https://letcode.in/signin");
-    await login.enterUserName("koushik350@gmail.com");
-    await login.enterUserPassword("Pass123$");
+    await login.enterUserName(data.email);
+    await login.enterUserPassword(data.pass);
     await login.clickLoginBtn();
     const toaster = await common.toaster;
     const toasterText = await toaster?.textContent();
@@ -37,7 +37,7 @@ describe("TC001", () => {
   });
   test("Login again", async () => {
     await login.login("koushik350@gmail.com", "Pass123$");
-    expect(page.url()).toBe("https://letcode.in/")
+    expect(page.url()).toBe("https://letcode.in/");
   });
 });
 function extractUsername(toasterText: string | null): string {

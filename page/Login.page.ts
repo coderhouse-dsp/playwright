@@ -1,3 +1,5 @@
+// POM Enhancement
+
 import { Page } from "playwright";
 
 export default class LoginPage {
