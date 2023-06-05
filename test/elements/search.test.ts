@@ -1,5 +1,5 @@
 import { Browser, BrowserContext, Page, chromium } from "playwright";
-import { collapseTextChangeRangesAcrossMultipleVersions } from "typescript";
+
 
 describe("Learn how to handle Elements", () => {
   let browser: Browser;
