@@ -25,8 +25,9 @@ export default class HeaderPage{
         else throw new Error("No Element")
     }
     public async clickLoginLink(){
-        const ele = await this.eleLoginBtn;
-        await ele?.click();
+        // const ele = await this.eleLoginBtn;
+        // await ele?.click();
+        await Promise.all([this.page.waitForNavigation(),this.page.click("text=Log in")])
     }
     public async clickSignOutLink(){
         const ele = await this.eleSignOutBtn;

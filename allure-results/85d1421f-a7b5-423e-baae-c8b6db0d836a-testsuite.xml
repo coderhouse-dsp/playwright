@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686033417111' stop='1686033489740'>
+    <name>Launch Browser</name>
+    <title>Launch Browser</title>
+    <test-cases>
+        <test-case start='1686033417111' status='failed' stop='1686033489739'>
+            <name>Recorded script</name>
+            <title>Recorded script</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: page.click: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                waiting for locator('text="Let\'s Go"')
+                ============================================================</message>
+                <stack-trace>page.click: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                waiting for locator('text="Let\'s Go"')
+                ============================================================
+                    at D:\Node\Playwright\Learn-playwright\test\login.test.ts:49:20
+                    at fulfilled (D:\Node\Playwright\Learn-playwright\test\login.test.ts:5:58)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1686033489740' status='pending' stop='1686033489740'>
+            <name>Open letcode</name>
+            <title>Open letcode</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

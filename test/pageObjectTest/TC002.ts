@@ -27,7 +27,7 @@ describe("TC001", () => {
     login = new LoginPage(page);
     common = new CommonFunctions(page);
   });
-  test("Login positive _ JIRA101", async () => {
+  test("Login positive 102", async () => {
     await reporter.description("Login into letcode").story("JIRA101")
     await reporter.startStep("Navigate to letcode")
     expect(page.url()).toBe("https://letcode.in/");

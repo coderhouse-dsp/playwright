@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685966801161' stop='1685966819910'>
+    <name>TC001</name>
+    <title>TC001</title>
+    <test-cases>
+        <test-case start='1685966816174' status='failed' stop='1685966816329'>
+            <name>Login positive _ JIRA101</name>
+            <title>Login positive _ JIRA101</title>
+            <labels>
+                <label name='story' value='JIRA101'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1685966816175' status='passed' stop='1685966816324'>
+                    <name>Navigate to letcode</name>
+                    <title>Navigate to letcode</title>
+                    <attachments>
+                        <attachment title='username' source='d706de1a-cd5c-492b-861a-5db3d3f8e2f9-attachment.png' type='image/png' size='5320'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1685966816324' status='undefined'>
+                    <name>Click login link</name>
+                    <title>Click login link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.
+                    at mapper (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:21:45)
+                    at D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+            <description type='text'>Login into letcode</description>
+        </test-case>
+        <test-case start='1685966816330' status='failed' stop='1685966819910'>
+            <name>Login again</name>
+            <title>Login again</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.
+                    at mapper (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:21:45)
+                    at D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

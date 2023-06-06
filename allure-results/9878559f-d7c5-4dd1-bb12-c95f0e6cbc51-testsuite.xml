@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686032684877' stop='1686032699903'>
+    <name>Launch Browser</name>
+    <title>Launch Browser</title>
+    <test-cases>
+        <test-case start='1686032684878' status='failed' stop='1686032699901'>
+            <name>Recorded script</name>
+            <title>Recorded script</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.Error: 
+                    at new Spec (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmine\Spec.js:107:22)
+                    at new Spec (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\setup_jest_globals.js:69:9)
+                    at specFactory (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmine\Env.js:398:22)
+                    at Env.it (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmine\Env.js:449:22)
+                    at Env.it (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:143:23)
+                    at it (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:67:21)
+                    at Suite.&lt;anonymous> (D:\Node\Playwright\Learn-playwright\test\login.test.ts:4:5)
+                    at addSpecsToSuite (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmine\Env.js:356:49)
+                    at Env.describe (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmine\Env.js:331:9)
+                    at describe (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:58:18)
+                    at Object.&lt;anonymous> (D:\Node\Playwright\Learn-playwright\test\login.test.ts:2:1)
+                    at Runtime._execModule (D:\Node\Playwright\Learn-playwright\node_modules\jest-runtime\build\index.js:1429:24)
+                    at Runtime._loadModule (D:\Node\Playwright\Learn-playwright\node_modules\jest-runtime\build\index.js:1013:12)
+                    at Runtime.requireModule (D:\Node\Playwright\Learn-playwright\node_modules\jest-runtime\build\index.js:873:12)
+                    at jasmine2 (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\index.js:195:13)
+                    at runTestInternal (D:\Node\Playwright\Learn-playwright\node_modules\jest-runner\build\runTest.js:367:16)
+                    at runTest (D:\Node\Playwright\Learn-playwright\node_modules\jest-runner\build\runTest.js:444:34)
+                    at Object.worker (D:\Node\Playwright\Learn-playwright\node_modules\jest-runner\build\testWorker.js:106:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1686032699902' status='pending' stop='1686032699902'>
+            <name>Open letcode</name>
+            <title>Open letcode</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

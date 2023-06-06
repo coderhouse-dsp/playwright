@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686033564801' stop='1686033612094'>
+    <name>Learn how to handle input fields</name>
+    <title>Learn how to handle input fields</title>
+    <test-cases>
+        <test-case start='1686033583444' status='passed' stop='1686033584212'>
+            <name>Enter your full Name</name>
+            <title>Enter your full Name</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033584212' status='passed' stop='1686033584625'>
+            <name>Append a text and press keyboard tab</name>
+            <title>Append a text and press keyboard tab</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033584625' status='passed' stop='1686033584668'>
+            <name>what is inside the text box</name>
+            <title>what is inside the text box</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033584668' status='passed' stop='1686033584925'>
+            <name>Clear the text</name>
+            <title>Clear the text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

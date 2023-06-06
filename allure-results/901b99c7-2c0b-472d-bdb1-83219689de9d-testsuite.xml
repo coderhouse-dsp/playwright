@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686033510323' stop='1686033546375'>
+    <name>Learn how to handle Elements</name>
+    <title>Learn how to handle Elements</title>
+    <test-cases>
+        <test-case start='1686033536627' status='passed' stop='1686033537048'>
+            <name>Enter Git username</name>
+            <title>Enter Git username</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033537048' status='passed' stop='1686033540218'>
+            <name>Print all the repos</name>
+            <title>Print all the repos</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

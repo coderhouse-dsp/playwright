@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686032763369' stop='1686032778465'>
+    <name>Learn how to handle dropdown</name>
+    <title>Learn how to handle dropdown</title>
+    <test-cases>
+        <test-case start='1686032778427' status='failed' stop='1686032778430'>
+            <name>Select a dropdown based on value</name>
+            <title>Select a dropdown based on value</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.
+                    at mapper (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:21:45)
+                    at D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1686032778430' status='failed' stop='1686032778431'>
+            <name>Select multiple</name>
+            <title>Select multiple</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.
+                    at mapper (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:21:45)
+                    at D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1686032778432' status='failed' stop='1686032778432'>
+            <name>Count of the select</name>
+            <title>Count of the select</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.
+                    at mapper (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:21:45)
+                    at D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1686032778433' status='failed' stop='1686032778435'>
+            <name>get selected text</name>
+            <title>get selected text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.</message>
+                <stack-trace>Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 15000 ms timeout specified by jest.setTimeout.
+                    at mapper (D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:21:45)
+                    at D:\Node\Playwright\Learn-playwright\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

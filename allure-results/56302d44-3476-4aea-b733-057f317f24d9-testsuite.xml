@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685965863277' stop='1685965879978'>
+    <name>TC001</name>
+    <title>TC001</title>
+    <test-cases>
+        <test-case start='1685965876111' status='passed' stop='1685965879972'>
+            <name>Login positive _ JIRA101</name>
+            <title>Login positive _ JIRA101</title>
+            <labels>
+                <label name='story' value='JIRA101'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1685965876113' status='passed' stop='1685965876115'>
+                    <name>Navigate to letcode</name>
+                    <title>Navigate to letcode</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1685965876115' status='undefined'>
+                    <name>Click login link</name>
+                    <title>Click login link</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1685965876372' status='passed' stop='1685965876733'>
+                            <name>enter Username</name>
+                            <title>enter Username</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1685965876733' status='passed' stop='1685965876780'>
+                            <name>enter password</name>
+                            <title>enter password</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1685965878289' status='passed' stop='1685965879971'>
+                            <name>Log out</name>
+                            <title>Log out</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Login into letcode</description>
+        </test-case>
+        <test-case start='1685965879973' status='failed' stop='1685965879978'>
+            <name>Login again</name>
+            <title>Login again</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: No element, hence failed</message>
+                <stack-trace>Error: No element, hence failed
+                    at LoginPage.&lt;anonymous> (D:\Node\Playwright\Learn-playwright\page\Login.page.ts:30:20)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (D:\Node\Playwright\Learn-playwright\page\Login.page.ts:6:58)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686033580893' stop='1686033606305'>
+    <name>Upload file</name>
+    <title>Upload file</title>
+    <test-cases>
+        <test-case start='1686033580895' status='pending' stop='1686033580897'>
+            <name>upload file using set input files</name>
+            <title>upload file using set input files</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1686033580897' status='passed' stop='1686033606305'>
+            <name>Upload using on function</name>
+            <title>Upload using on function</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

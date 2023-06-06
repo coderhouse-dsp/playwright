@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685965966549' stop='1685965988710'>
+    <name>TC001</name>
+    <title>TC001</title>
+    <test-cases>
+        <test-case start='1685965981027' status='passed' stop='1685965988709'>
+            <name>Login positive _ JIRA101</name>
+            <title>Login positive _ JIRA101</title>
+            <labels>
+                <label name='story' value='JIRA101'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1685965981028' status='passed' stop='1685965981031'>
+                    <name>Navigate to letcode</name>
+                    <title>Navigate to letcode</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1685965981031' status='undefined'>
+                    <name>Click login link</name>
+                    <title>Click login link</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1685965981243' status='passed' stop='1685965981512'>
+                            <name>enter Username</name>
+                            <title>enter Username</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1685965981512' status='passed' stop='1685965981535'>
+                            <name>enter password</name>
+                            <title>enter password</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1685965983707' status='passed' stop='1685965988709'>
+                            <name>Log out</name>
+                            <title>Log out</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <description type='text'>Login into letcode</description>
+        </test-case>
+        <test-case start='1685965988709' status='pending' stop='1685965988709'>
+            <name>Login again</name>
+            <title>Login again</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

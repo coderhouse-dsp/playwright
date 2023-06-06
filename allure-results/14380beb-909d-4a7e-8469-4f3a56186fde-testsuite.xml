@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686033490537' stop='1686033560456'>
+    <name>Learn how to handle dropdown</name>
+    <title>Learn how to handle dropdown</title>
+    <test-cases>
+        <test-case start='1686033521122' status='passed' stop='1686033521149'>
+            <name>Home Page</name>
+            <title>Home Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033521149' status='pending' stop='1686033521149'>
+            <name>Single page handling</name>
+            <title>Single page handling</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1686033521149' status='passed' stop='1686033528253'>
+            <name>Multi page handling</name>
+            <title>Multi page handling</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1686033549625' stop='1686033588315'>
+    <name>Learn how to handle dropdown</name>
+    <title>Learn how to handle dropdown</title>
+    <test-cases>
+        <test-case start='1686033567302' status='passed' stop='1686033567469'>
+            <name>Select a dropdown based on value</name>
+            <title>Select a dropdown based on value</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033567469' status='passed' stop='1686033567612'>
+            <name>Select multiple</name>
+            <title>Select multiple</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033567612' status='passed' stop='1686033567658'>
+            <name>Count of the select</name>
+            <title>Count of the select</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1686033567658' status='passed' stop='1686033567743'>
+            <name>get selected text</name>
+            <title>get selected text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
