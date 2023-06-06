@@ -39,7 +39,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "shadow.test.ts"
+          "visual.test.ts"
         ],
         "timeout": 30000
       }
@@ -52,13 +52,13 @@
   },
   "suites": [
     {
-      "title": "shadow-dom\\shadow.test.ts",
-      "file": "shadow-dom/shadow.test.ts",
+      "title": "visual-comparison\\visual.test.ts",
+      "file": "visual-comparison/visual.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "chromium bug App",
+          "title": "Visual comparison",
           "ok": true,
           "tags": [],
           "tests": [
@@ -71,22 +71,288 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 10901,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 12238,
+                  "error": {
+                    "message": "\u001b[31mScreenshot comparison failed:\u001b[39m\n\n  19 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-diff.png\u001b[39m",
+                    "stack": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  19 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-diff.png\u001b[39m\n    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:8:9",
+                    "location": {
+                      "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                      "column": 9,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({\u001b[0m\n\u001b[0m \u001b[90m  7 |\u001b[39m         fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     }))\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"letcode.png\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                        "column": 9,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  19 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-diff.png\u001b[39m\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({\u001b[0m\n\u001b[0m \u001b[90m  7 |\u001b[39m         fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     }))\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"letcode.png\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:8:9\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-06T12:12:09.689Z",
+                  "startTime": "2023-06-06T12:24:54.054Z",
+                  "attachments": [
+                    {
+                      "name": "letcode-expected.png",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-expected.png"
+                    },
+                    {
+                      "name": "letcode-actual.png",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-actual.png"
+                    },
+                    {
+                      "name": "letcode-diff.png",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\letcode-diff.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                    "column": 9,
+                    "line": 8
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 11913,
+                  "error": {
+                    "message": "\u001b[31mScreenshot comparison failed:\u001b[39m\n\n  19 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-diff.png\u001b[39m",
+                    "stack": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  19 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-diff.png\u001b[39m\n    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:8:9",
+                    "location": {
+                      "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                      "column": 9,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({\u001b[0m\n\u001b[0m \u001b[90m  7 |\u001b[39m         fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     }))\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"letcode.png\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                        "column": 9,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  19 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-expected.png\u001b[39m\nReceived: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-actual.png\u001b[39m\n    Diff: \u001b[33mD:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-diff.png\u001b[39m\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({\u001b[0m\n\u001b[0m \u001b[90m  7 |\u001b[39m         fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     }))\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m\"letcode.png\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:8:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2023-06-06T12:25:09.699Z",
+                  "attachments": [
+                    {
+                      "name": "letcode-expected.png",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-expected.png"
+                    },
+                    {
+                      "name": "letcode-actual.png",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-actual.png"
+                    },
+                    {
+                      "name": "letcode-diff.png",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\letcode-diff.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-Visual-comparison-retry1\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                    "column": 9,
+                    "line": 8
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 8840,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2023-06-06T12:25:24.723Z",
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
-          "id": "4599bb2486771006021f-a0783345f0a19dc8214e",
-          "file": "shadow-dom/shadow.test.ts",
-          "line": 8,
+          "id": "dc1a46684368b2c59ba0-ba189f66e7df037d1d23",
+          "file": "visual-comparison/visual.test.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "example test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 7528,
+                  "error": {
+                    "message": "A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png.",
+                    "stack": "Error: A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png.\n    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:13:37",
+                    "location": {
+                      "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                      "column": 37,
+                      "line": 13
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://playwright.dev'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'snapshot-name.png'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                        "column": 37,
+                        "line": 13
+                      },
+                      "message": "Error: A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png.\n\n\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://playwright.dev'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'snapshot-name.png'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:13:37\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-06-06T12:25:35.178Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-example-test\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                    "column": 37,
+                    "line": 13
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 6365,
+                  "error": {
+                    "message": "A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png.",
+                    "stack": "Error: A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png.\n    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:13:37",
+                    "location": {
+                      "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                      "column": 37,
+                      "line": 13
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://playwright.dev'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'snapshot-name.png'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                        "column": 37,
+                        "line": 13
+                      },
+                      "message": "Error: A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png.\n\n\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://playwright.dev'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'snapshot-name.png'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:13:37\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2023-06-06T12:25:45.421Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-example-test-retry1\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-example-test-retry1\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                    "column": 37,
+                    "line": 13
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 3787,
+                  "error": {
+                    "message": "A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png, writing actual.",
+                    "stack": "Error: A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png, writing actual.\n    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:13:37",
+                    "location": {
+                      "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                      "column": 37,
+                      "line": 13
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://playwright.dev'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'snapshot-name.png'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                        "column": 37,
+                        "line": 13
+                      },
+                      "message": "Error: A snapshot doesn't exist at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts-snapshots\\snapshot-name-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'example test'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://playwright.dev'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'snapshot-name.png'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts:13:37\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2023-06-06T12:25:55.391Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\visual-comparison-visual-example-test-retry2\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Node\\Playwright\\test-runner\\visual-comparison\\visual.test.ts",
+                    "column": 37,
+                    "line": 13
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "dc1a46684368b2c59ba0-db39b6afc236915ccd9b",
+          "file": "visual-comparison/visual.test.ts",
+          "line": 11,
           "column": 5
         }
       ]

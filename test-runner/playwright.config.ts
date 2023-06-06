@@ -7,7 +7,7 @@ const config:PlaywrightTestConfig = {
         screenshot:"only-on-failure",
         video:"retry-with-video",
     },
-    testMatch:["shadow.test.ts"],
+    testMatch:["visual.test.ts"],
     retries:2,
     reporter:[["dot"],["json",{outputFile:"test-result.json"}]]
 }
