@@ -11,7 +11,9 @@ test.describe("Suite demo", () => {
         const title = await page.title();
         expect(title).toBe("LetCode with Koushik");
     });
-
+    test.beforeEach(async ()=>{
+        await page.goto("https://letcode.in")
+    })
     test("open letcode and login", async () => {
         // const title = await page.title();
         // expect(title).toBe("LetCode with Koushik");

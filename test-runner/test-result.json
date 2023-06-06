@@ -39,7 +39,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "shadow.test.ts"
         ],
         "timeout": 30000
       }
@@ -52,83 +52,42 @@
   },
   "suites": [
     {
-      "title": "test\\first.test.ts",
-      "file": "test/first.test.ts",
+      "title": "shadow-dom\\shadow.test.ts",
+      "file": "shadow-dom/shadow.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Suite demo",
-          "file": "test/first.test.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
+          "title": "chromium bug App",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "open letcode and verify title",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 57,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-06-06T10:02:29.327Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 10901,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-06-06T12:12:09.689Z",
+                  "attachments": []
                 }
               ],
-              "id": "3856c4984ceecfa48ccb-bfb363c3f4139c003363",
-              "file": "test/first.test.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "open letcode and login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 2161,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-06-06T10:02:40.975Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "3856c4984ceecfa48ccb-2b9bf50f8d56fba37514",
-              "file": "test/first.test.ts",
-              "line": 15,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "4599bb2486771006021f-a0783345f0a19dc8214e",
+          "file": "shadow-dom/shadow.test.ts",
+          "line": 8,
+          "column": 5
         }
       ]
     }
