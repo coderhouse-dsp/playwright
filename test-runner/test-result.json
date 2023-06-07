@@ -39,7 +39,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "tracing.test.ts"
+          "mytest.test.ts"
         ],
         "timeout": 120000
       }
@@ -52,83 +52,46 @@
   },
   "suites": [
     {
-      "title": "tracing\\tracing.test.ts",
-      "file": "tracing/tracing.test.ts",
+      "title": "fixtures\\mytest.test.ts",
+      "file": "fixtures/mytest.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "TC002",
-          "file": "tracing/tracing.test.ts",
-          "line": 6,
-          "column": 6,
-          "specs": [
+          "title": "my tests 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Login positive",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 120000,
+              "annotations": [
                 {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 25305,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-06-07T06:38:56.096Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "type": "skip"
                 }
               ],
-              "id": "1258b7de83965b5c2e0a-5cd546da99a6ad43a923",
-              "file": "tracing/tracing.test.ts",
-              "line": 32,
-              "column": 7
-            },
-            {
-              "title": "Login again",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "expectedStatus": "skipped",
+              "projectId": "",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 8866,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-06-07T06:39:25.128Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 79,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-06-07T07:07:55.745Z",
+                  "attachments": []
                 }
               ],
-              "id": "1258b7de83965b5c2e0a-8b30c2c09cb3f262bbee",
-              "file": "tracing/tracing.test.ts",
-              "line": 43,
-              "column": 7
+              "status": "skipped"
             }
-          ]
+          ],
+          "id": "57408b3d71288017041a-eb6a21486acb2ffc9b1f",
+          "file": "fixtures/mytest.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
