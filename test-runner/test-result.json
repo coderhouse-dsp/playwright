@@ -7,10 +7,7 @@
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
-    "grep": [
-      {},
-      {}
-    ],
+    "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {},
@@ -46,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "tags.test.ts"
+          "youtube.test.ts"
         ],
         "timeout": 120000
       }
@@ -59,17 +56,15 @@
   },
   "suites": [
     {
-      "title": "tags\\tags.test.ts",
-      "file": "tags/tags.test.ts",
+      "title": "webscrapping\\youtube.test.ts",
+      "file": "webscrapping/youtube.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Test signup page @smoke",
+          "title": "Calculate youtube playlist durationhttps://www.youtube.com/playlist?list=PL699Xf-_ilW6vI9FHmePi1TvKyzYATgXi",
           "ok": true,
-          "tags": [
-            "smoke"
-          ],
+          "tags": [],
           "tests": [
             {
               "timeout": 120000,
@@ -81,33 +76,37 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 68,
+                  "duration": 27287,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "some signup test\n"
+                      "text": "\u001b[33m99\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m1294.5000000000002\u001b[39m\n"
+                    },
+                    {
+                      "text": "Playwright Test Runner - 2022 - YouTube --> 21h 34m 30s \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-07T10:37:34.911Z",
+                  "startTime": "2023-06-07T13:41:22.023Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "f84f7f8d30dd6d73115c-a710a6aacf669bd83ffb",
-          "file": "tags/tags.test.ts",
-          "line": 3,
-          "column": 5
+          "id": "4f0d5a260bccd1f1c4e3-17e6700d3a6ae745196d",
+          "file": "webscrapping/youtube.test.ts",
+          "line": 7,
+          "column": 7
         },
         {
-          "title": "Test login page @reg",
+          "title": "Calculate youtube playlist durationhttps://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD",
           "ok": true,
-          "tags": [
-            "reg"
-          ],
+          "tags": [],
           "tests": [
             {
               "timeout": 120000,
@@ -119,26 +118,32 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 38,
+                  "duration": 23346,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "some reg test\n"
+                      "text": "\u001b[33m99\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m1294.5000000000002\u001b[39m\n"
+                    },
+                    {
+                      "text": "Playwright Test Runner - 2022 - YouTube --> 21h 34m 30s \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-07T10:37:34.985Z",
+                  "startTime": "2023-06-07T13:41:51.372Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "f84f7f8d30dd6d73115c-79caa8f67b31704d01b1",
-          "file": "tags/tags.test.ts",
-          "line": 9,
-          "column": 5
+          "id": "4f0d5a260bccd1f1c4e3-53b2b62682e775c9638f",
+          "file": "webscrapping/youtube.test.ts",
+          "line": 7,
+          "column": 7
         }
       ]
     }

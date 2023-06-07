@@ -87,10 +87,7 @@ const config:PlaywrightTestConfig = {
         trace:"retain-on-failure",
         baseURL:"https://letcode.in"
     },
-    // grep:[new RegExp("@smoke")],
-    grep:[new RegExp("@smoke"),new RegExp("@reg")],
-    // grepInvert:[new RegExp("@smoke")],
-    testMatch:["tags.test.ts"],
+    testMatch:["youtube.test.ts"],
     // retries:2,
     reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000
