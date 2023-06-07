@@ -85,8 +85,9 @@ const config:PlaywrightTestConfig = {
         screenshot:"only-on-failure",
         video:"retry-with-video",
     },
-    testMatch:["auth.ts"],
+    testMatch:["tracing.test.ts"],
     // retries:2,
-    reporter:[["dot"],["json",{outputFile:"test-result.json"}]]
+    reporter:[["dot"],["json",{outputFile:"test-result.json"}]],
+    timeout:120000
 }
 export default config

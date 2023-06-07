@@ -33,15 +33,15 @@
       {
         "outputDir": "D:/Node/Playwright/test-runner/test-results",
         "repeatEach": 1,
-        "retries": 2,
+        "retries": 0,
         "id": "",
         "name": "",
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "auth.ts"
+          "tracing.test.ts"
         ],
-        "timeout": 30000
+        "timeout": 120000
       }
     ],
     "shard": null,
@@ -52,25 +52,25 @@
   },
   "suites": [
     {
-      "title": "network\\auth.ts",
-      "file": "network/auth.ts",
+      "title": "tracing\\tracing.test.ts",
+      "file": "tracing/tracing.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Netwrok - Playwright",
-          "file": "network/auth.ts",
-          "line": 3,
+          "title": "TC002",
+          "file": "tracing/tracing.test.ts",
+          "line": 6,
           "column": 6,
           "specs": [
             {
-              "title": "Http Authentication",
-              "ok": false,
+              "title": "Login positive",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 120000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "",
@@ -78,90 +78,55 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "timedOut",
-                      "duration": 30016,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Basic Auth\n"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 25305,
+                      "errors": [],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-06-07T06:20:58.481Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Node\\Playwright\\test-runner\\test-results\\network-auth.ts-Netwrok---Playwright-Http-Authentication\\test-failed-1.png"
-                        }
-                      ]
-                    },
-                    {
-                      "workerIndex": 1,
-                      "status": "timedOut",
-                      "duration": 30008,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Basic Auth\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-06-07T06:21:32.109Z",
+                      "startTime": "2023-06-07T06:38:56.096Z",
                       "attachments": []
-                    },
-                    {
-                      "workerIndex": 2,
-                      "status": "timedOut",
-                      "duration": 30010,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Basic Auth\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 2,
-                      "startTime": "2023-06-07T06:22:05.192Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Node\\Playwright\\test-runner\\test-results\\network-auth.ts-Netwrok---Playwright-Http-Authentication-retry2\\test-failed-1.png"
-                        }
-                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "b28378be939344492920-917b99aac8bd5b5f139a",
-              "file": "network/auth.ts",
-              "line": 4,
-              "column": 9
+              "id": "1258b7de83965b5c2e0a-5cd546da99a6ad43a923",
+              "file": "tracing/tracing.test.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "Login again",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8866,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-06-07T06:39:25.128Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1258b7de83965b5c2e0a-8b30c2c09cb3f262bbee",
+              "file": "tracing/tracing.test.ts",
+              "line": 43,
+              "column": 7
             }
           ]
         }
