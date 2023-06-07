@@ -84,11 +84,15 @@ const config:PlaywrightTestConfig = {
         channel:"chrome",
         screenshot:"only-on-failure",
         video:"retry-with-video",
-        trace:"on"
+        trace:"retain-on-failure",
+        baseURL:"https://letcode.in"
     },
-    testMatch:["basicVerification.test.ts"],
+    // grep:[new RegExp("@smoke")],
+    grep:[new RegExp("@smoke"),new RegExp("@reg")],
+    // grepInvert:[new RegExp("@smoke")],
+    testMatch:["tags.test.ts"],
     // retries:2,
-    reporter:[["dot"],["json",{outputFile:"test-result.json"}]],
+    reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000
 }
 export default config
