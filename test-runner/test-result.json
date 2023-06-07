@@ -39,7 +39,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "mytest.test.ts"
+          "test.ts"
         ],
         "timeout": 120000
       }
@@ -52,45 +52,41 @@
   },
   "suites": [
     {
-      "title": "fixtures\\mytest.test.ts",
-      "file": "fixtures/mytest.test.ts",
+      "title": "fixtures\\test.ts",
+      "file": "fixtures/test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "my tests 1",
+          "title": "test 1",
           "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 120000,
-              "annotations": [
-                {
-                  "type": "skip"
-                }
-              ],
-              "expectedStatus": "skipped",
+              "annotations": [],
+              "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 79,
+                  "status": "passed",
+                  "duration": 20498,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-07T07:07:55.745Z",
+                  "startTime": "2023-06-07T08:56:16.461Z",
                   "attachments": []
                 }
               ],
-              "status": "skipped"
+              "status": "expected"
             }
           ],
-          "id": "57408b3d71288017041a-eb6a21486acb2ffc9b1f",
-          "file": "fixtures/mytest.test.ts",
-          "line": 3,
+          "id": "26c113ecb32a6af93e2d-9749515d2162bf71fbe5",
+          "file": "fixtures/test.ts",
+          "line": 8,
           "column": 5
         }
       ]
