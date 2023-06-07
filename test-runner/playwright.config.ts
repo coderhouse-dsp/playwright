@@ -86,7 +86,7 @@ const config:PlaywrightTestConfig = {
         video:"retry-with-video",
         trace:"on"
     },
-    testMatch:["test.ts"],
+    testMatch:["basicVerification.test.ts"],
     // retries:2,
     reporter:[["dot"],["json",{outputFile:"test-result.json"}]],
     timeout:120000

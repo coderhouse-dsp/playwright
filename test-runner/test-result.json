@@ -39,7 +39,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "test.ts"
+          "basicVerification.test.ts"
         ],
         "timeout": 120000
       }
@@ -52,14 +52,14 @@
   },
   "suites": [
     {
-      "title": "fixtures\\test.ts",
-      "file": "fixtures/test.ts",
+      "title": "UIverification\\basicVerification.test.ts",
+      "file": "UIverification/basicVerification.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test 1",
-          "ok": true,
+          "title": "Basic UI Verification",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -71,22 +71,51 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 20498,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 120008,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Node\\Playwright\\test-runner\\UIverification\\basicVerification.test.ts",
+                        "column": 16,
+                        "line": 23
+                      },
+                      "message": "Error: page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for locator('input:below(:text(\\'Find if the checkbbox is selected?\\'))') to be visible\n============================================================\n\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://letcode.in/radio\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\"input:below(:text('Find if the checkbbox is selected?'))\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m     \u001b[36mconst\u001b[39m checkBox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"input:below(:text('Find if the checkbbox is selected?'))\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mif\u001b[39m(checkBox)\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     {\u001b[0m\n\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\UIverification\\basicVerification.test.ts:23:16\u001b[22m"
+                    },
+                    {
+                      "message": "Pending operations:\n  - page.waitForSelector at UIverification\\basicVerification.test.ts:23:16\n"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-07T08:56:16.461Z",
-                  "attachments": []
+                  "startTime": "2023-06-07T09:21:05.532Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\UIverification-basicVerification-Basic-UI-Verification\\trace.zip"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\UIverification-basicVerification-Basic-UI-Verification\\test-failed-1.png"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "26c113ecb32a6af93e2d-9749515d2162bf71fbe5",
-          "file": "fixtures/test.ts",
-          "line": 8,
+          "id": "490dbfd5d9c695f773d9-30da0fa8cf52d3e04e96",
+          "file": "UIverification/basicVerification.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
