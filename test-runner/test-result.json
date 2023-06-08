@@ -43,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "youtube.test.ts"
+          "annotation.test.ts"
         ],
         "timeout": 120000
       }
@@ -56,19 +56,23 @@
   },
   "suites": [
     {
-      "title": "webscrapping\\youtube.test.ts",
-      "file": "webscrapping/youtube.test.ts",
+      "title": "annotation\\annotation.test.ts",
+      "file": "annotation/annotation.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Calculate youtube playlist durationhttps://www.youtube.com/playlist?list=PL699Xf-_ilW6vI9FHmePi1TvKyzYATgXi",
+          "title": "second test",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 120000,
-              "annotations": [],
+              "timeout": 360000,
+              "annotations": [
+                {
+                  "type": "slow"
+                }
+              ],
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
@@ -76,74 +80,69 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 27287,
+                  "duration": 4397,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[33m99\u001b[39m\n"
+                      "text": "second test running\n"
                     },
                     {
-                      "text": "\u001b[33m1294.5000000000002\u001b[39m\n"
-                    },
-                    {
-                      "text": "Playwright Test Runner - 2022 - YouTube --> 21h 34m 30s \n"
+                      "text": "second test completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-07T13:41:22.023Z",
+                  "startTime": "2023-06-08T05:12:44.438Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "4f0d5a260bccd1f1c4e3-17e6700d3a6ae745196d",
-          "file": "webscrapping/youtube.test.ts",
-          "line": 7,
-          "column": 7
+          "id": "a190816ddb3fa3b9532c-b495cabf4360c722c950",
+          "file": "annotation/annotation.test.ts",
+          "line": 8,
+          "column": 6
         },
         {
-          "title": "Calculate youtube playlist durationhttps://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD",
+          "title": "third test",
           "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
               "projectId": "",
               "projectName": "",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 23346,
+                  "status": "skipped",
+                  "duration": 1297,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[33m99\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m1294.5000000000002\u001b[39m\n"
-                    },
-                    {
-                      "text": "Playwright Test Runner - 2022 - YouTube --> 21h 34m 30s \n"
+                      "text": "Name:chromium\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-07T13:41:51.372Z",
+                  "startTime": "2023-06-08T05:12:51.550Z",
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "skipped"
             }
           ],
-          "id": "4f0d5a260bccd1f1c4e3-53b2b62682e775c9638f",
-          "file": "webscrapping/youtube.test.ts",
-          "line": 7,
-          "column": 7
+          "id": "a190816ddb3fa3b9532c-79e2ca35feecfe11fcf3",
+          "file": "annotation/annotation.test.ts",
+          "line": 14,
+          "column": 6
         }
       ]
     }

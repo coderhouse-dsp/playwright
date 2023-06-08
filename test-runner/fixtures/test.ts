@@ -1,4 +1,4 @@
-import test , {expect} from "./basePages"
+ import test , {expect} from "./basePages"
 import * as data from "../../Learn-playwright/data/login.cred.json"
 
 test.beforeEach(async ({page})=>{
