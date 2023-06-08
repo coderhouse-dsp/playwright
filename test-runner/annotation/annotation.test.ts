@@ -15,7 +15,7 @@ test.only("third test",async({page,browserName})=>{
     console.log("Name:"+browserName)
     if(browserName=="chromium")
     {
-        test.skip()
+        test.skip() 
     }
     console.log("third test running")
     await page.goto("https://letcode.in")

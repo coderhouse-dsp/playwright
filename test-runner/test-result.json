@@ -43,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "annotation.test.ts"
+          "apiresponse.test.ts"
         ],
         "timeout": 120000
       }
@@ -56,23 +56,19 @@
   },
   "suites": [
     {
-      "title": "annotation\\annotation.test.ts",
-      "file": "annotation/annotation.test.ts",
+      "title": "network\\apiresponse.test.ts",
+      "file": "network/apiresponse.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "second test",
+          "title": "Read API response",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 360000,
-              "annotations": [
-                {
-                  "type": "slow"
-                }
-              ],
+              "timeout": 120000,
+              "annotations": [],
               "expectedStatus": "passed",
               "projectId": "",
               "projectName": "",
@@ -80,69 +76,29 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4397,
+                  "duration": 13387,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "second test running\n"
+                      "text": "<Buffer 7b 0a 20 20 22 6c 6f 67 69 6e 22 3a 20 22 6f 72 74 6f 6e 69 4b 43 22 2c 0a 20 20 22 69 64 22 3a 20 35 38 37 36 39 38 33 33 2c 0a 20 20 22 6e 6f 64 65 ... 1355 more bytes>\n"
                     },
                     {
-                      "text": "second test completed\n"
+                      "text": "{\n  login: \u001b[32m'ortoniKC'\u001b[39m,\n  id: \u001b[33m58769833\u001b[39m,\n  node_id: \u001b[32m'MDQ6VXNlcjU4NzY5ODMz'\u001b[39m,\n  avatar_url: \u001b[32m'https://avatars.githubusercontent.com/u/58769833?v=4'\u001b[39m,\n  gravatar_id: \u001b[32m''\u001b[39m,\n  url: \u001b[32m'https://api.github.com/users/ortoniKC'\u001b[39m,\n  html_url: \u001b[32m'https://github.com/ortoniKC'\u001b[39m,\n  followers_url: \u001b[32m'https://api.github.com/users/ortoniKC/followers'\u001b[39m,\n  following_url: \u001b[32m'https://api.github.com/users/ortoniKC/following{/other_user}'\u001b[39m,\n  gists_url: \u001b[32m'https://api.github.com/users/ortoniKC/gists{/gist_id}'\u001b[39m,\n  starred_url: \u001b[32m'https://api.github.com/users/ortoniKC/starred{/owner}{/repo}'\u001b[39m,\n  subscriptions_url: \u001b[32m'https://api.github.com/users/ortoniKC/subscriptions'\u001b[39m,\n  organizations_url: \u001b[32m'https://api.github.com/users/ortoniKC/orgs'\u001b[39m,\n  repos_url: \u001b[32m'https://api.github.com/users/ortoniKC/repos'\u001b[39m,\n  events_url: \u001b[32m'https://api.github.com/users/ortoniKC/events{/privacy}'\u001b[39m,\n  received_events_url: \u001b[32m'https://api.github.com/users/ortoniKC/received_events'\u001b[39m,\n  type: \u001b[32m'User'\u001b[39m,\n  site_admin: \u001b[33mfalse\u001b[39m,\n  name: \u001b[32m'Koushik Chatterjee'\u001b[39m,\n  company: \u001b[32m'LetCode'\u001b[39m,\n  blog: \u001b[32m'https://letcode.in'\u001b[39m,\n  location: \u001b[32m'Chennai, TN, India'\u001b[39m,\n  email: \u001b[1mnull\u001b[22m,\n  hireable: \u001b[33mtrue\u001b[39m,\n  bio: \u001b[32m'Youtuber @letcode_with_koushik\\r\\n20k+ subscribers.'\u001b[39m,\n  twitter_username: \u001b[32m'Koushik_chat'\u001b[39m,\n  public_repos: \u001b[33m66\u001b[39m,\n  public_gists: \u001b[33m5\u001b[39m,\n  followers: \u001b[33m295\u001b[39m,\n  following: \u001b[33m1\u001b[39m,\n  created_at: \u001b[32m'2019-12-11T09:27:13Z'\u001b[39m,\n  updated_at: \u001b[32m'2023-04-02T15:19:34Z'\u001b[39m\n}\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-08T05:12:44.438Z",
+                  "startTime": "2023-06-08T05:31:17.962Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "a190816ddb3fa3b9532c-b495cabf4360c722c950",
-          "file": "annotation/annotation.test.ts",
-          "line": 8,
-          "column": 6
-        },
-        {
-          "title": "third test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [
-                {
-                  "type": "skip"
-                }
-              ],
-              "expectedStatus": "skipped",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 1297,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Name:chromium\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-06-08T05:12:51.550Z",
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "id": "a190816ddb3fa3b9532c-79e2ca35feecfe11fcf3",
-          "file": "annotation/annotation.test.ts",
-          "line": 14,
-          "column": 6
+          "id": "747431c75c8820dfb94d-f09d38fb9ac11d087afc",
+          "file": "network/apiresponse.test.ts",
+          "line": 2,
+          "column": 5
         }
       ]
     }
