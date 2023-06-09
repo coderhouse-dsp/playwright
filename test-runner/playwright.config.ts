@@ -93,9 +93,9 @@ const config:PlaywrightTestConfig = {
         //     }
         // }
     },
-    testMatch:["report.test.ts"],
+    testMatch:["mousewheel.test.ts"],
     // retries:2,
-    reporter:"./customReport/myReporter.ts",
+    // reporter:"./customReport/myReporter.ts",
     // reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000
 }
