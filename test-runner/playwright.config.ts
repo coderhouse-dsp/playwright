@@ -93,9 +93,10 @@ const config:PlaywrightTestConfig = {
         //     }
         // }
     },
-    testMatch:["waitForAlert.test.ts"],
+    testMatch:["report.test.ts"],
     // retries:2,
-    reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
+    reporter:"./customReport/myReporter.ts",
+    // reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000
 }
 export default config
