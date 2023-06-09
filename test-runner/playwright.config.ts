@@ -93,7 +93,7 @@ const config:PlaywrightTestConfig = {
         //     }
         // }
     },
-    testMatch:["locatorindetail.test.ts"],
+    testMatch:["waitForAlert.test.ts"],
     // retries:2,
     reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000

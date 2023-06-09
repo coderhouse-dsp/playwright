@@ -43,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "locatorindetail.test.ts"
+          "waitForAlert.test.ts"
         ],
         "timeout": 120000
       }
@@ -56,13 +56,13 @@
   },
   "suites": [
     {
-      "title": "locatorAPI\\locatorindetail.test.ts",
-      "file": "locatorAPI/locatorindetail.test.ts",
+      "title": "customWaits\\waitForAlert.test.ts",
+      "file": "customWaits/waitForAlert.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Locator in detail",
+          "title": "wait for an alert",
           "ok": true,
           "tags": [],
           "tests": [
@@ -76,38 +76,35 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 6969,
+                  "duration": 14357,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Sauce Labs Onesie\n"
-                    },
-                    {
-                      "text": "Sauce Labs Fleece Jacket\n"
+                      "text": "Alert message: Finally I'm here, just to say Hi :)\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Login",
-                      "duration": 3220
+                      "title": "Goto to page",
+                      "duration": 6650
                     },
                     {
-                      "title": "Change price",
-                      "duration": 304
+                      "title": "Accept the alert",
+                      "duration": 4710
                     }
                   ],
-                  "startTime": "2023-06-09T04:30:47.706Z",
+                  "startTime": "2023-06-09T04:47:40.267Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "de66d1dc0c2b85b79f22-8c9384648e2878fc4e49",
-          "file": "locatorAPI/locatorindetail.test.ts",
-          "line": 2,
+          "id": "743efc3d351a5969360e-7398fad549c7d022425a",
+          "file": "customWaits/waitForAlert.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
