@@ -43,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "locatorVsElementHandle.test.ts"
+          "Logger.ts"
         ],
         "timeout": 120000
       }
@@ -51,147 +51,14 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.34.3",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "locatorAPI\\locatorVsElementHandle.test.ts",
-      "file": "locatorAPI/locatorVsElementHandle.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Locator API",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 12539,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33m30\u001b[39m\n"
-                    },
-                    {
-                      "text": "[\n  \u001b[32m'https://github.com/ortoniKC/AnkitSharma-007'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/atom'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/Challenge'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/chrome-native-message'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/covid-chrome-extension'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/Cucumber-2022-letcode'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/Cucumber-Parallel'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/cypress'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/Cypress-1'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/cypress-documentation'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/cypress-example-recipes'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/cypress-realworld-app'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/design-resources-for-developers'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/drink_water_chrome_mv3'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/February'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/flutter'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/FlutterExamples'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/flutter_deep_ar_face_effect'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/Giphy-Chrome-extension'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/git-demo'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/github-automation'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/gravity-chrome-extension'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/java-string-letcode-2022'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/JavaDS'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/javascript-programming'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/javascript-tamil-tutorial-2023'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/Jio-Saavn-Dark-Theme'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/JS-DS-ALGO'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/JS_DS_ALGO'\u001b[39m,\n  \u001b[32m'https://github.com/ortoniKC/lambda-test-selenium-java-tutorial'\u001b[39m\n]\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/AnkitSharma-007\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/atom\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/Challenge\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/chrome-native-message\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/covid-chrome-extension\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/Cucumber-2022-letcode\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/Cucumber-Parallel\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/cypress\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/Cypress-1\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/cypress-documentation\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/cypress-example-recipes\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/cypress-realworld-app\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/design-resources-for-developers\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/drink_water_chrome_mv3\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/February\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/flutter\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/FlutterExamples\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/flutter_deep_ar_face_effect\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/Giphy-Chrome-extension\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/git-demo\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/github-automation\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/gravity-chrome-extension\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/java-string-letcode-2022\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/JavaDS\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/javascript-programming\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/javascript-tamil-tutorial-2023\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/Jio-Saavn-Dark-Theme\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/JS-DS-ALGO\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/JS_DS_ALGO\n"
-                    },
-                    {
-                      "text": "https://github.com/ortoniKC/lambda-test-selenium-java-tutorial\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-06-08T08:58:32.709Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "8dcf387e29917569ee77-63d9786a44174be04407",
-          "file": "locatorAPI/locatorVsElementHandle.test.ts",
-          "line": 10,
-          "column": 6
-        }
-      ]
+      "message": "No tests found",
+      "stack": "Error: No tests found\n"
     }
-  ],
-  "errors": []
+  ]
 }

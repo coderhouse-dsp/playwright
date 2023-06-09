@@ -1,0 +1,19 @@
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h71-20020a63834a000000b0051416609fb7sm999919pge.61 - gsmtp
+    at SMTPConnection._formatError [90m(D:\Node\Playwright\test-runner\[39mnode_modules\[4mnodemailer[24m\lib\smtp-connection\index.js:790:19[90m)[39m
+    at SMTPConnection._actionAUTHComplete [90m(D:\Node\Playwright\test-runner\[39mnode_modules\[4mnodemailer[24m\lib\smtp-connection\index.js:1564:34[90m)[39m
+    at SMTPConnection.<anonymous> [90m(D:\Node\Playwright\test-runner\[39mnode_modules\[4mnodemailer[24m\lib\smtp-connection\index.js:546:26[90m)[39m
+    at SMTPConnection._processResponse [90m(D:\Node\Playwright\test-runner\[39mnode_modules\[4mnodemailer[24m\lib\smtp-connection\index.js:969:20[90m)[39m
+    at SMTPConnection._onData [90m(D:\Node\Playwright\test-runner\[39mnode_modules\[4mnodemailer[24m\lib\smtp-connection\index.js:755:14[90m)[39m
+    at TLSSocket.SMTPConnection._onSocketData [90m(D:\Node\Playwright\test-runner\[39mnode_modules\[4mnodemailer[24m\lib\smtp-connection\index.js:193:44[90m)[39m
+[90m    at TLSSocket.emit (node:events:513:28)[39m
+[90m    at addChunk (node:internal/streams/readable:324:12)[39m
+[90m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+[90m    at TLSSocket.Readable.push (node:internal/streams/readable:234:10)[39m
+[90m    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)[39m {
+  code: [32m'EAUTH'[39m,
+  response: [32m'535-5.7.8 Username and Password not accepted. Learn more at\n'[39m +
+    [32m'535 5.7.8  https://support.google.com/mail/?p=BadCredentials h71-20020a63834a000000b0051416609fb7sm999919pge.61 - gsmtp'[39m,
+  responseCode: [33m535[39m,
+  command: [32m'AUTH PLAIN'[39m
+}

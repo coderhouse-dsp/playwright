@@ -87,7 +87,7 @@ const config:PlaywrightTestConfig = {
         trace:"retain-on-failure",
         baseURL:"https://letcode.in"
     },
-    testMatch:["locatorVsElementHandle.test.ts"],
+    testMatch:["Logger.ts"],
     // retries:2,
     reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000
