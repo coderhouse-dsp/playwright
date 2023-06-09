@@ -43,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "playLogger.test.ts"
+          "locatorindetail.test.ts"
         ],
         "timeout": 120000
       }
@@ -56,14 +56,14 @@
   },
   "suites": [
     {
-      "title": "logger\\playLogger.test.ts",
-      "file": "logger/playLogger.test.ts",
+      "title": "locatorAPI\\locatorindetail.test.ts",
+      "file": "locatorAPI/locatorindetail.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Logger",
-          "ok": false,
+          "title": "Locator in detail",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -75,57 +75,39 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 4285,
-                  "error": {
-                    "message": "Cannot read properties of undefined (reading 'continue')",
-                    "stack": "TypeError: Cannot read properties of undefined (reading 'continue')\n    at Page.<anonymous> (D:\\Node\\Playwright\\test-runner\\logger\\playLogger.test.ts:18:36)",
-                    "location": {
-                      "file": "D:\\Node\\Playwright\\test-runner\\logger\\playLogger.test.ts",
-                      "column": 36,
-                      "line": 18
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[90m// Continue the request with the modified URL\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         request\u001b[33m.\u001b[39m_existingOperation\u001b[33m.\u001b[39m\u001b[36mcontinue\u001b[39m({ url\u001b[33m:\u001b[39m modifiedUrl })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m  \u001b[0m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 6969,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "D:\\Node\\Playwright\\test-runner\\logger\\playLogger.test.ts",
-                        "column": 36,
-                        "line": 18
-                      },
-                      "message": "TypeError: Cannot read properties of undefined (reading 'continue')\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[90m// Continue the request with the modified URL\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         request\u001b[33m.\u001b[39m_existingOperation\u001b[33m.\u001b[39m\u001b[36mcontinue\u001b[39m({ url\u001b[33m:\u001b[39m modifiedUrl })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m  \u001b[0m\n\n\u001b[2m    at Page.<anonymous> (D:\\Node\\Playwright\\test-runner\\logger\\playLogger.test.ts:18:36)\u001b[22m"
+                      "text": "Sauce Labs Onesie\n"
+                    },
+                    {
+                      "text": "Sauce Labs Fleece Jacket\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-09T03:37:10.419Z",
-                  "attachments": [
+                  "steps": [
                     {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\logger-playLogger-Logger\\trace.zip"
+                      "title": "Login",
+                      "duration": 3220
                     },
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\logger-playLogger-Logger\\test-failed-1.png"
+                      "title": "Change price",
+                      "duration": 304
                     }
                   ],
-                  "errorLocation": {
-                    "file": "D:\\Node\\Playwright\\test-runner\\logger\\playLogger.test.ts",
-                    "column": 36,
-                    "line": 18
-                  }
+                  "startTime": "2023-06-09T04:30:47.706Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "6b22f7ea8c2e2dc6a5a3-c6da52e28ef540194f4c",
-          "file": "logger/playLogger.test.ts",
-          "line": 3,
+          "id": "de66d1dc0c2b85b79f22-8c9384648e2878fc4e49",
+          "file": "locatorAPI/locatorindetail.test.ts",
+          "line": 2,
           "column": 5
         }
       ]
