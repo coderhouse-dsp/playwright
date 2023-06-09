@@ -1,0 +1,1 @@
+The keyword 'slider-vertical' specified to an 'appearance' property is not standardized. It will be removed in the future.

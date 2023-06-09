@@ -85,9 +85,15 @@ const config:PlaywrightTestConfig = {
         screenshot:"only-on-failure",
         video:"retry-with-video",
         trace:"retain-on-failure",
-        baseURL:"https://letcode.in"
+        baseURL:"https://letcode.in",
+        // launchOptions:{
+        //     logger:{
+        //         isEnabled:(name,severity)=>true,
+        //         log:(name,severity,message,args)=>console.log(name,severity)
+        //     }
+        // }
     },
-    testMatch:["Logger.ts"],
+    testMatch:["playLogger.test.ts"],
     // retries:2,
     reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000
