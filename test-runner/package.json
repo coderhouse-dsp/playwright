@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "report":"npx playwright test --reporter=html && npx playwright show-report",
     "debug": "npx playwright test --debug",
     "test": "npx playwright test",
     "test-us": "npx playwright test --update-snapshots"
