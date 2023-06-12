@@ -82,9 +82,12 @@ const config:PlaywrightTestConfig = {
     use:{
         headless:false,
         channel:"chrome",
-        screenshot:"only-on-failure",
-        video:"retry-with-video",
-        trace:"retain-on-failure",
+        // screenshot:"only-on-failure",
+        // video:"retry-with-video",
+        // trace:"retain-on-failure",
+        screenshot:"on",
+        video:"on",
+        trace:"on",
         baseURL:"https://letcode.in",
         // launchOptions:{
         //     logger:{
@@ -93,10 +96,12 @@ const config:PlaywrightTestConfig = {
         //     }
         // }
     },
-    // testMatch:["clickhold.test.ts"],
+    testMatch:["reportDemo/*.test.ts"],
     // retries:2,
     // reporter:"./customReport/myReporter.ts",
     // reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
-    timeout:120000
+    reporter:[["dot"],["json",{outputFile:"test-result.json"}],['html',{open:"never"}]],
+    timeout:120000,
+    globalTeardown:'./helper/globalsetup.ts'
 }
 export default config

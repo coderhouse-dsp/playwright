@@ -5,7 +5,7 @@
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
-    "globalTeardown": null,
+    "globalTeardown": "D:\\Node\\Playwright\\test-runner\\helper\\globalsetup.ts",
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
@@ -24,8 +24,10 @@
         }
       ],
       [
-        "D:\\Node\\Playwright\\test-runner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
-        null
+        "html",
+        {
+          "open": "never"
+        }
       ]
     ],
     "reportSlowTests": {
@@ -43,7 +45,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "clickhold.test.ts"
+          "reportDemo/*.test.ts"
         ],
         "timeout": 120000
       }
@@ -56,14 +58,14 @@
   },
   "suites": [
     {
-      "title": "clickAndHold\\clickhold.test.ts",
-      "file": "clickAndHold/clickhold.test.ts",
+      "title": "reportDemo\\clip.test.ts",
+      "file": "reportDemo/clip.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Click and hold",
-          "ok": true,
+          "title": "Access clipboard",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -75,22 +77,76 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 14672,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 120006,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Node\\Playwright\\test-runner\\reportDemo\\clip.test.ts",
+                        "column": 16,
+                        "line": 28
+                      },
+                      "message": "Error: page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[@types__StyledButton-action=\\'copy\\']')\n============================================================\n\n\u001b[0m \u001b[90m 26 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\reportDemo\\clip.test.ts:28:16\u001b[22m\n\u001b[2m    at D:\\Node\\Playwright\\test-runner\\reportDemo\\clip.test.ts:27:14\u001b[22m"
+                    },
+                    {
+                      "message": "Pending operations:\n  - page.click at reportDemo\\clip.test.ts:28:16\n"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-12T06:58:48.916Z",
-                  "attachments": []
+                  "steps": [
+                    {
+                      "title": "Goto the site",
+                      "duration": 3317
+                    },
+                    {
+                      "title": "click to copy",
+                      "duration": 120115,
+                      "error": {
+                        "message": "page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[@types__StyledButton-action=\\'copy\\']')\n============================================================",
+                        "stack": "Error: page.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[@types__StyledButton-action=\\'copy\\']')\n============================================================\n    at D:\\Node\\Playwright\\test-runner\\reportDemo\\clip.test.ts:28:16\n    at D:\\Node\\Playwright\\test-runner\\reportDemo\\clip.test.ts:27:14",
+                        "location": {
+                          "file": "D:\\Node\\Playwright\\test-runner\\reportDemo\\clip.test.ts",
+                          "column": 16,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2023-06-12T10:29:54.535Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\reportDemo-clip-Access-clipboard\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\reportDemo-clip-Access-clipboard\\trace.zip"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Node\\Playwright\\test-runner\\test-results\\reportDemo-clip-Access-clipboard\\test-failed-1.png"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "515876bcdd201e4b62e0-fe315eccbbe52238741b",
-          "file": "clickAndHold/clickhold.test.ts",
-          "line": 2,
+          "id": "d450dd6c33f2892c3493-cf658bc927f067c4446f",
+          "file": "reportDemo/clip.test.ts",
+          "line": 4,
           "column": 1
         }
       ]
