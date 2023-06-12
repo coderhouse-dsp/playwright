@@ -93,7 +93,7 @@ const config:PlaywrightTestConfig = {
         //     }
         // }
     },
-    testMatch:["clip.test.ts"],
+    testMatch:["blocker.test.ts"],
     // retries:2,
     // reporter:"./customReport/myReporter.ts",
     reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],

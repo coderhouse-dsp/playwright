@@ -43,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "clip.test.ts"
+          "blocker.test.ts"
         ],
         "timeout": 120000
       }
@@ -56,13 +56,13 @@
   },
   "suites": [
     {
-      "title": "clipboard\\clip.test.ts",
-      "file": "clipboard/clip.test.ts",
+      "title": "network\\blocker.test.ts",
+      "file": "network/blocker.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Access clipboard",
+          "title": "Block images - Network Intercept",
           "ok": true,
           "tags": [],
           "tests": [
@@ -76,82 +76,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12937,
+                  "duration": 18482,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "From clipboard: Just because you can doesn't mean you should — clipboard.js\n"
-                    },
-                    {
-                      "text": "From clipboard URL: https://github.com/zenorocha/clipboard.js.git\n"
-                    },
-                    {
-                      "text": "Title from new tab: GitHub - zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 3kb gzipped\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Goto the https://clipboardjs.com/",
-                      "duration": 5041
-                    },
-                    {
-                      "title": "click to copy",
-                      "duration": 91
-                    },
-                    {
-                      "title": "access the clipboard",
-                      "duration": 4246
-                    }
-                  ],
-                  "startTime": "2023-06-12T06:18:02.208Z",
+                  "startTime": "2023-06-12T06:45:54.414Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "98c01faa8eb98bd45ff0-7b1e9e9ad9a1a501f0c7",
-          "file": "clipboard/clip.test.ts",
-          "line": 4,
+          "id": "4bb4dc37e691f2f5de65-19716d2242cf829659e5",
+          "file": "network/blocker.test.ts",
+          "line": 2,
           "column": 1
-        },
-        {
-          "title": "Open url from clipboard",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [
-                {
-                  "type": "skip"
-                }
-              ],
-              "expectedStatus": "skipped",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-06-12T06:18:17.393Z",
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "id": "98c01faa8eb98bd45ff0-ba686d8b08c81b9dca72",
-          "file": "clipboard/clip.test.ts",
-          "line": 23,
-          "column": 6
         }
       ]
     }
