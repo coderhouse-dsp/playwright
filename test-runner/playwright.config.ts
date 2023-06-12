@@ -93,10 +93,10 @@ const config:PlaywrightTestConfig = {
         //     }
         // }
     },
-    testMatch:["mousewheel.test.ts"],
+    testMatch:["clip.test.ts"],
     // retries:2,
     // reporter:"./customReport/myReporter.ts",
-    // reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
+    reporter:[["dot"],["json",{outputFile:"test-result.json"}],['experimental-allure-playwright']],
     timeout:120000
 }
 export default config

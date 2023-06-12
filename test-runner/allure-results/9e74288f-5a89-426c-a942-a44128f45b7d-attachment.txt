@@ -1,0 +1,1 @@
+Title from new tab: GitHub - zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 3kb gzipped
