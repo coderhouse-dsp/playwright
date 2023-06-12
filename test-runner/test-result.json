@@ -43,7 +43,7 @@
         "testDir": "D:/Node/Playwright/test-runner",
         "testIgnore": [],
         "testMatch": [
-          "blocker.test.ts"
+          "clickhold.test.ts"
         ],
         "timeout": 120000
       }
@@ -56,13 +56,13 @@
   },
   "suites": [
     {
-      "title": "network\\blocker.test.ts",
-      "file": "network/blocker.test.ts",
+      "title": "clickAndHold\\clickhold.test.ts",
+      "file": "clickAndHold/clickhold.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Block images - Network Intercept",
+          "title": "Click and hold",
           "ok": true,
           "tags": [],
           "tests": [
@@ -76,20 +76,20 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 18482,
+                  "duration": 14672,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-12T06:45:54.414Z",
+                  "startTime": "2023-06-12T06:58:48.916Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "4bb4dc37e691f2f5de65-19716d2242cf829659e5",
-          "file": "network/blocker.test.ts",
+          "id": "515876bcdd201e4b62e0-fe315eccbbe52238741b",
+          "file": "clickAndHold/clickhold.test.ts",
           "line": 2,
           "column": 1
         }
